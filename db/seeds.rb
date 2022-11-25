@@ -26,8 +26,8 @@ List.create(name: "Classsic Movies", image_url:"https://images.unsplash.com/phot
 List.create(name: "Foreign Films", image_url:"https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8amFwYW5lc2UlMjBzdHJlZXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60")
 List.create(name:"Comedy", image_url:"https://images.unsplash.com/photo-1543584756-8f40a802e14f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80")
 
-
-book_one = B  ookmark.new(comment: "Amazing classic, a must watch")
+Bookmark.destroy_all
+book_one = Bookmark.new(comment: "Amazing classic, a must watch")
 book_one.movie = Movie.find_by(id:100)
 book_one.list = List.first
 book_one.save
