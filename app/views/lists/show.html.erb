@@ -1,6 +1,6 @@
 <div class="banner" style="background-image: url('<%=@list.image_url%>')">
   <h1><%= @list.name %></h1>
-  <%= link_to "All Lists", lists_path , class:"btn btn-success add-movie-btn" %>
+  <%= link_to "All Lists", root_path , class:"btn btn-success add-movie-btn" %>
 
   <p class="btn btn-warning total-movies"><%= @list.movies.length %> movies</p>
 </div>
